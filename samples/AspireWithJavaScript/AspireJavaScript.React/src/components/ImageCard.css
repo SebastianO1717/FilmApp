@@ -1,0 +1,41 @@
+.image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.image-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.image-container {
+    border: 5px solid white; /* Changed from #00b7ff to white */
+    border-radius: 5px;
+    padding: 0px; /* Changed from 4px to 0px to remove the gap */
+    margin-bottom: 1rem;
+}
+
+.photo {
+    max-width: 100%;
+    max-height: 60vh; /* Reduced from 70vh */
+    display: block;
+}
+
+.image-metadata {
+    text-align: center;
+}
+
+.image-date {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.image-location {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
