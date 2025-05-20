@@ -1,12 +1,35 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
+// Import your images
+import mountainsImage from "..//images//mountains.jpg";
+import photoImage from "..//images//photo.jpg";
+import snowyImage from "..//images//snowy.jpg";
+
 function App() {
   const [forecasts, setForecasts] = useState([]);
 
-  const requestWeather = async () => {
-    const weather = await fetch("api/weatherforecast");
-    console.log(weather);
+    // Sample data with imported images
+    const photoCollection = [
+        {
+            title: "In the mountains",
+            image: mountainsImage,
+            date: "09/01/2024",
+            location: "Tolmie Peak, WA"
+        },
+        {
+            title: "Golden Hour",
+            image: photoImage,
+            date: "08/15/2024",
+            location: "St. Augustine, FL"
+        },
+        {
+            title: "The snowy neighborhood",
+            image: snowyImage,
+            date: "02/01/2025",
+            location: "Seattle, WA"
+        },
+    ];
 
     const weatherJson = await weather.json();
     console.log(weatherJson);
